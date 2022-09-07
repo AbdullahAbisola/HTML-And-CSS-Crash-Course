@@ -1,0 +1,138 @@
+/*Terminology
+What is Viewport : It is the space in which you can view in a website
+What is a CSS reset: It is when we reset all the computer-styled code*/
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+header{
+    /* position: static; Doesn't do anything, but it puts it into normal document flow: Top to bottom without any iind of positioning property */
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    background-color: #f63232;
+    top: 0; /*Gets rid of the spaces*/
+    left: 0;
+}
+header h1{
+    color: white;
+    border: 8px solid white;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 36px;
+}
+nav{
+    background: #f4f4f4;
+    padding: 20px;
+    position: sticky; /*This position sets our element to stick to the page at a certain point*/
+    top: 100px;
+
+}
+nav ul{
+    white-space: nowrap;/*Prevents content in this nav from wrapping to next line*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    width: 25%;
+    font-size: 24px;
+
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join{
+    color: #f63232;
+
+}
+.banner {
+    position: relative;
+   
+}
+.banner img{
+    max-width: 100%; /*Makes img 100% width of the viewport or of the parent element it's in. If the parent element has not been styled in width then it takes viewport width*/
+}
+.banner .welcome{
+    position:absolute;
+    background-color: #feb614;
+    color: white;
+    padding: 30px;
+    top: 35%; 
+    left: 0;
+    margin-left: 100px;
+    /*the top, left,right,and bottom declarations are different from the margin top, bottom,right,and left declarations. 
+    The top,left,right and bottom declaration are used to denote the position of an object that will be relative to it's parent if it's value is set to absolute 
+    while 
+    the margin ones will be as normal*/
+}
+.banner h2 {
+    font-size: 48px;
+    text-align: center;
+}
+.banner h2 span{
+    font-size: 1.3em; /*ems is a unit of measurement that multiplies the tag by it's parenr*/
+}
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px; /*This ends up pushing the page past the viewport there fore to correct this we need to use the box-sizing declaration*/
+    box-sizing: border-box;
+}
+article h2{
+    color: #f63232;
+    font-size: 32px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.images{
+    text-align: center;
+    margin: 80px 0; 
+    white-space: nowrap;
+}
+.images li{
+    width: 40%;
+    display: inline-block;
+    margin: 20px 5%;
+   
+
+}
+.images li img{
+    max-width: 100%;
+}
+.come{
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+    color: #4b4b4b;
+}
+.come h2{
+    font-size: 36px;
+}
+.come input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+footer{
+    background-color: #f63232;
+    color: white;
+    padding: 20px;
+}
+footer p{
+    font-size: 24px;
+    text-align: center;
+    
+}
