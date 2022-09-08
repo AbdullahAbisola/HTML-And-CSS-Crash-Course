@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restech Group - Bringing The Future To Your Restaurant</title>
+</head>
+<body>
+  <h1>HTML Forms</h1>  
+
+  <form>
+      <!--Add an Input field - Each field has it's own separate type-->
+      <label for="username"> Enter Username:</label> <!--Label is associated to id attribute which is NEAT-->
+      <br><br>
+      <input required type="text" id="username" name="username"placeholder="Username"> <!--id attribute serves as an identifier for the tag. No other tag can have this id because it's unique to the tag. It identifies the tag. You can use the in-hook css to style it as well as javascript to get the id. We can also link it to a label-->
+      <br><br> <!--The name field allows the back-end developer to utilise the values given but most importantly it groups different parts of forms together -->
+      <label for="mail">Enter Your Email</label>
+      <br><br>
+      <input required type="email" id="mail" name="mail"placeholder="Email">
+      <br><br>
+      <label for="pass">Enter Your Password</label>
+      <br><br>
+      <input required type="password" id="pass" name="pass"placeholder="Password"> 
+
+      <p>Please Select an Age</p>
+      <input type="radio" id="option-1" name="age" value="0-25">
+      <label for="option-1">0-25</label>
+      <input type="radio" id="option-2" name="age" value="25-50">
+      <label for="option-2">25-50</label>
+      <input type="radio" id="option-3" name="age" value="50-75">
+      <label for="option-3">50-75</label>
+
+      <br><br>
+      <label for="question">Security Question</label>
+      <select style="width: 100px;" name="question" id="question">
+          <option value="Disk" name="question">Disk?</option> <!--The select tag has options much like how inputs work-->
+          <option value="Plate" name="question">Plate?</option>
+          <option value="Spoons" name="question">Spoons?</option>
+      </select> <!--This selects an option-->
+         <br><br>
+     <label for="">Security Question Answers</label>
+     <input type="text" id="answer" name="answer">
+     <br><br>
+      <label for="bio">Your Bio</label>
+      <br>
+     <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About You"></textarea> <!--This is an area where one can type a long response, such as a query or a biography etc, USES the placeholder attribute to add text to the text area-->
+      <br><br>
+      <input type="submit" value="Submit" id="submit" name="submit">
+  </form> <!--The Action Attribute tells the browser what to do once the form is submitted ( More To do with PHP and server side data)-->
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+   background: #000;
+ 
+}
+section {
+    position: absolute;
+    z-index: -1;
+}
+section .image .wall{
+   max-width: 100%;
+   max-height: 100%;
+   /* object-fit: cover; */
+   opacity: 75%;
+}
+.wrapper {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 860px;
+}
+.flex-container{
+   display: flex; /*The flex property creates a box that put in all the included elements next to each other side by side*/
+   background: #fff;
+   flex-wrap: wrap;
+   /* flex-wrap: wrap-reverse;
+   Wraps the next element to the top/previous line instead of the bottom */
+}
+
+.box{
+    height:100px;
+    min-width: 200px;
+    flex-grow: 1;
+
+    /*Grows the elements inside the flexbox at a rate of 1, whereby page is getting bigger */
+    /* width: 320px; 
+    used when shrinking elements bc the width must be large*/
+}
+.one{
+    background: red;
+    /* flex-grow: 3; */
+    /* flex-shrink: 1; 
+    Shrinks the elements inside the flexbox at the rate of 1 whereby the page is getting smaller*/
+}
+.two{
+    background: blue;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+}
+.three{
+    background: green;
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+}
