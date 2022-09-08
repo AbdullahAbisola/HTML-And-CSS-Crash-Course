@@ -11,6 +11,7 @@ header{
     /* position: static; Doesn't do anything, but it puts it into normal document flow: Top to bottom without any iind of positioning property */
     position: fixed;
     text-align: center;
+    margin: 0 auto;
     width: 100%;
     z-index: 1;
     padding: 20px;
@@ -35,12 +36,13 @@ nav{
 nav ul{
     white-space: nowrap;/*Prevents content in this nav from wrapping to next line*/
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 nav li{
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
+    text-align: center;
     width: 25%;
     font-size: 24px;
 
@@ -135,4 +137,63 @@ footer p{
     font-size: 24px;
     text-align: center;
     
+}
+@media screen and (max-width: 1000px) { 
+    .banner .welcome{
+        top: 45%;
+    }
+    .banner .welcome h2{
+      font-size: 32px;
+    
+    }
+    nav li{
+        font-size: 16px;
+    }
+
+            
+}
+@media screen and (max-width: 695px) {
+    .banner .welcome{
+        top: 45%;
+        margin-left: 50px;
+    }
+
+    
+}
+@media screen and (max-width: 580px) {
+    .banner .welcome{
+       position: relative;
+       padding: 10px;
+       margin-left: 0px;
+    }
+    .banner .welcome h2{
+        font-size: 30px;
+    }
+    .banner .welcome br{
+       display: none;
+    }
+    .banner h2 span{
+        font-size: 1em;
+    }
+    .images li{
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .banner img{
+        max-height: 100%; 
+    }
+}
+    @media screen and (max-width: 450px) {
+        nav li{
+            font-size: 12px;
+        }
+        header {
+            margin: 0px auto;
+            padding:15px ;
+        }
+        header h1{
+           font-size: 28px;
+
+        }
 }
